@@ -1,0 +1,12 @@
+<section class="page-layout">
+  <div class="container layout-grid">
+    <div class="content">
+      <ng-content />
+    </div>
+    @if (showSidebar) {
+      <aside class="sidebar">
+        <img [src]="sidebarImage" [alt]="sidebarAlt" />
+      </aside>
+    }
+  </div>
+</section>

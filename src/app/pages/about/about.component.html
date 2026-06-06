@@ -1,0 +1,48 @@
+<app-page-layout sidebarImage="images/abt.jpg" sidebarAlt="Smt. Chetanasundaresh — Founder of CNN">
+  <h1 class="page-title"><span class="accent">About</span> Chetana Natya Niketana</h1>
+  <p>
+    "Chetana Natya Niketana" School of Bharatanatyam is a leading dance institute in Bangalore. The
+    renowned dance teacher Smt. Chetana Sundaresh founded "Chetana Natya Niketana" in 1999 with the aim
+    of promoting the rich art and cultural heritage of India. It fulfills this aim through proper and
+    intensive training of young talents, thereby bringing the essence of Bharatanatyam style of
+    Classical Dance. "Chetana Natya Niketana" has also been working for the cultural upliftment of
+    classical dance of India.
+  </p>
+  <p><strong>Motto of CNN is to enrich the art in the field of:</strong></p>
+  <ul class="tag-list">
+    @for (item of motto; track item) {
+      <li>{{ item }}</li>
+    }
+  </ul>
+
+  <h2>About Smt. Chetanasundaresh</h2>
+  <p>
+    Smt. Chetanasundaresh was born in 1977 at Mysore to Smt. Sumithra &amp; Sri Parameshwarachar. She
+    started her Bharathanatyam career at the age of five under the guidance of guru Smt. Ushadatar.
+    Further she completed her higher grade education in Bharathanatyam under the guidance of guru Sri
+    Rajudatar &amp; guru Smt. Narmada. She has completed her junior, Senior &amp; also Vidwat board
+    Examination.
+  </p>
+  <p>
+    She has also done her professional education in the field of Carnatic vocal, Veena &amp; Keyboard
+    under the guidance of guru Sri Chandrashekar. Further she dedicated her life in training &amp;
+    spreading the talented traditional art to the young minds at the age of 20. This interest made her
+    establish CNN in the year 1999. She is training the students to appear for junior, senior &amp;
+    vidwat board examination.
+  </p>
+
+  <h2>Where all CNN students have performed?</h2>
+  <ul>
+    @for (venue of performances; track venue) {
+      <li>{{ venue }}</li>
+    }
+  </ul>
+  <p>
+    Many programmes are performed by CNN Kuteera students under the guidance of Smt. Chetanasundaresh
+    from the past 10 years.
+  </p>
+  <p>
+    Some of these are: Hampi Utsava, Udupi, Iskcon Heritage, World's Dance Day, etc. — totally
+    113 stage performances.
+  </p>
+</app-page-layout>

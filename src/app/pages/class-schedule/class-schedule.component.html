@@ -1,0 +1,32 @@
+<app-page-layout sidebarImage="images/clssdh.jpg" sidebarAlt="Class schedule at CNN">
+  <h1 class="page-title"><span class="accent">Schedule</span> for Classes</h1>
+  <p>You can see below for detailed schedule and class information at CNN.</p>
+
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Course Name</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of schedule; track row.name; let i = $index) {
+          <tr>
+            <td>{{ i + 1 }}.</td>
+            <td>{{ row.name }}</td>
+            <td>{{ row.duration }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Rules and Regulations at CNN</h2>
+  <ul>
+    @for (rule of rules; track rule) {
+      <li>{{ rule }}</li>
+    }
+  </ul>
+</app-page-layout>

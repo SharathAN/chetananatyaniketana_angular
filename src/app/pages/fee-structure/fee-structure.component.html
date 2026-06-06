@@ -1,0 +1,27 @@
+<app-page-layout sidebarImage="images/Dancer.jpg" sidebarAlt="Courses at CNN">
+  <h1 class="page-title"><span class="accent">Fee</span> Structure</h1>
+  <p>You can see below for fee structure of courses at CNN.</p>
+
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Course Name</th>
+          <th>Admission</th>
+          <th>Monthly</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of fees; track row.name; let i = $index) {
+          <tr>
+            <td>{{ i + 1 }}.</td>
+            <td>{{ row.name }}</td>
+            <td>{{ row.admission }}</td>
+            <td>{{ row.monthly }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</app-page-layout>

@@ -1,0 +1,65 @@
+<section class="hero">
+  <div class="hero-media">
+    <img src="images/hm.jpg" alt="Bharatanatyam performance at Chetana Natya Niketana" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container hero-content">
+    <p class="hero-eyebrow">School of Classical Dance &amp; Music · Bangalore · Est. 1999</p>
+    <h1>Chetana Natya Niketana</h1>
+    <p class="hero-lead">
+      Preserving the grace of Bharatanatyam and the soul of Carnatic music —
+      training young artists under one roof.
+    </p>
+    <div class="hero-actions">
+      <a routerLink="/courses" class="btn btn-primary">Explore Courses</a>
+      <a routerLink="/contact" class="btn btn-outline-light">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-body">
+  <div class="container home-grid">
+    <article>
+      <h2 class="section-heading">What is CNN?</h2>
+      <p>
+        Chetana Natya Niketana (CNN) is an institution where students are trained skilfully in
+        Bharathanatyam, Carnatic music, Veena, Keyboard &amp; Fine Arts. The founder &amp; promoter of CNN,
+        Smt. Chetanasundaresh, trains about 250 students under the art roof of CNN. Students are given
+        enormous opportunity to perform in many fests, cultural programmes &amp; temples.
+      </p>
+      <ul class="tag-list">
+        @for (d of disciplines; track d) {
+          <li>{{ d }}</li>
+        }
+      </ul>
+
+      <h2 class="section-heading">What is Bharathanatyam?</h2>
+      <p>
+        Bharathanatyam is a classical dance form from the South Indian state of Tamil Nadu, practiced
+        predominantly in modern times by women. The dance is usually accompanied by classical Carnatic
+        music. It dates back to 1000 B.C. This dance form improves body language and brings a new
+        expression to the human face. It is a great physical activity that requires a lot of movement.
+        Children learn to be graceful and well coordinated. Dancing to the beat of Carnatic music also
+        helps their minds relax — a good outlet to stay physically fit and maintain a sound mind.
+      </p>
+      <p>
+        Carnatic music is a South Indian musical style practised mainly in Tamil Nadu &amp; Karnataka.
+        The songs sung in this style are mainly for Bharathanatyam. The theme of the songs is based on
+        Hindu gods &amp; goddesses. The chief objective of CNN is to spread these Indian traditional arts
+        under a single roof.
+      </p>
+    </article>
+
+    <aside class="home-aside">
+      <div class="aside-card">
+        <h3>Classical Arts</h3>
+        <p>Dance · Vocal · Veena · Keyboard · Fine Arts</p>
+      </div>
+      <div class="aside-card">
+        <h3>250+ Students</h3>
+        <p>Training under Smt. Chetanasundaresh since 1999</p>
+      </div>
+      <a routerLink="/about" class="aside-link">Learn about our journey →</a>
+    </aside>
+  </div>
+</section>

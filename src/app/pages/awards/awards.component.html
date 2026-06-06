@@ -1,0 +1,12 @@
+<app-page-layout sidebarImage="images/Dancer.jpg" sidebarAlt="Award-winning performances at CNN">
+  <h1 class="page-title"><span class="accent">Awards</span> &amp; Achievements</h1>
+  <p>
+    CNN is an institution which imparts training in Bharatanatyam. The school aims at providing training
+    to all, irrespective of age, religion, caste, creed and the like. CNN have achieved a high level of
+    proficiency in Bharatanatyam and won prizes, awards, titles, etc.
+  </p>
+  <h2>CNN has been honoured by awards:</h2>
+  @for (award of awards; track award) {
+    <div class="award-item">{{ award }}</div>
+  }
+</app-page-layout>

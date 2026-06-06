@@ -1,0 +1,38 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a routerLink="/" class="logo" (click)="closeMenu()">
+      <img src="images/CNN-logo.png" alt="Chetana Natya Niketana" />
+    </a>
+
+    <button
+      type="button"
+      class="menu-toggle"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" [class.is-open]="menuOpen()" aria-label="Main navigation">
+      <ul class="nav-list">
+        @for (item of navItems; track item.path) {
+          <li>
+            <a
+              [routerLink]="item.path"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+              (click)="closeMenu()">
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+      <div class="nav-actions">
+        <a routerLink="/announcements" class="btn btn-outline" (click)="closeMenu()">Announcements</a>
+        <a routerLink="/contact" class="btn btn-primary" (click)="closeMenu()">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
